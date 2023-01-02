@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class BasesAlgo
+    internal class Exo
     {
-        public BasesAlgo() { }
+        public Exo() { }
         public void Case()
         {
             Console.WriteLine("BASE ALGO \n \n");

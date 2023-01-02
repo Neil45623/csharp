@@ -95,7 +95,7 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-            BasesAlgo Case = new();
+            Exo Case = new();
             Case.Case();
         }
     }
