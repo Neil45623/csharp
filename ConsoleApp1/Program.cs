@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
-{
-    internal class Tablix
-    {
-        public static void Main()
-        {
+//namespace ConsoleApp1
+//{
+//    internal class Tablix
+//    {
+//        public static void Main(string[] args)
+//        {
+            /*
             int[,] Tableau = new int[1, 2];
             int[,,] TableauB = new int[5, 2, 3];
 
@@ -40,11 +41,12 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(i);
                 //Affichage du Tableau3[1]
-            }
+//            }
+//            */
             
-        }
-    }
-}
+//        }
+//    }
+//}
 
 /*
 enum JourSemaine
@@ -86,3 +88,15 @@ class Program
         }
     }
 */
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            BasesAlgo Case = new();
+            Case.Case();
+        }
+    }
+}
