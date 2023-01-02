@@ -1,0 +1,19 @@
+CLR = environnement d'exécution des apps
+
+Bibliothèque de classe sont divisé en espace de nom (unité logique qui regroupe le code de manière cohérente)
+
+.Net se compose de 2 types différents : type valeur type référence
+
+Type valeur = type dans lequel on stock une valeur (représente la données qu'il a en mémoire)
+
+Type référence = les données sont stockée en mémoire et un pointeur vers ces données  est stocké dans la variable
+
+String != type valeur
+
+Un type référence doit etre instancie avec le mot NEW
+
+Avec le symbole @ on peut utiliser des mot clés en tant qu'identifiant
+
+Espace de noms : fichier dans lequel on déclare un namespace dans lequel on stock des classes
+
+Enum valeur stocké comme dans un tableau 0 1 2 3 4 5 etc
