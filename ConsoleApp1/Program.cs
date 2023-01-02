@@ -16,8 +16,13 @@ class Program
     {
         JourSemaine Aujourdhui = JourSemaine.Lundi;
         JourSemaine AujourdhuiB = 0;
+        
 
         Console.WriteLine(Aujourdhui);
         Console.WriteLine(AujourdhuiB);
+
+        JourSemaine WeekEnd = JourSemaine.Samedi | JourSemaine.Dimanche;
+
+        Console.WriteLine(WeekEnd);
     }
 }
