@@ -15,7 +15,7 @@ namespace ConsoleApp1
             Console.WriteLine("2/ Pass ou fail");
             Console.WriteLine("3/ Nombre aléatoire");
             Console.WriteLine("4/ Table de multiplication");
-            Console.WriteLine("4/ Produit de deux nombres");
+            Console.WriteLine("5/ Produit de deux nombres");
             var choix = Convert.ToInt32(Console.ReadLine());
 
             switch (choix)
@@ -31,6 +31,9 @@ namespace ConsoleApp1
                     break;
                 case 4:
                     Exo4();
+                    break;
+                case 5:
+                    Exo5();
                     break;
             }
         }
@@ -116,7 +119,22 @@ namespace ConsoleApp1
         }
         public void Exo5()
         {
+            Console.WriteLine("Entrer un nombre");
+            var nombreentree1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Entrer un second nombre");
+            var nombreentree2 = Convert.ToInt32(Console.ReadLine());
 
+            do
+            {
+                if (nombreentree1 * nombreentree2 > 1000) continue;
+                Console.WriteLine("inférieur a 1000!\n");
+                Console.WriteLine("Entrer un nombre");
+                nombreentree1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Entrer un second nombre");
+                nombreentree2 = Convert.ToInt32(Console.ReadLine());
+            } while (nombreentree1 * nombreentree2 <= 1000);
+            Console.WriteLine("SUpérieur a 1000!\n");
+            Case();
         }
     }
 }
