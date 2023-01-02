@@ -11,11 +11,14 @@ namespace ConsoleApp1
         public BasesAlgo() { }
         public void Case()
         {
+            Console.WriteLine("BASE ALGO \n \n");
             Console.WriteLine("1/ Determiner le plus grand des 2 nombres");
             Console.WriteLine("2/ Pass ou fail");
             Console.WriteLine("3/ Nombre aléatoire");
             Console.WriteLine("4/ Table de multiplication");
             Console.WriteLine("5/ Produit de deux nombres");
+            Console.WriteLine("LOOPS ARRAY \n \n");
+            Console.WriteLine("6/ Programme qui créé un tableau \n \n");
             var choix = Convert.ToInt32(Console.ReadLine());
 
             switch (choix)
