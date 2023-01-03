@@ -9,8 +9,8 @@ namespace TP2
     public class Voiture
     {
         string marque = "";
-        string modèle = "";
-        int nbPorte = "";
+        string modele = "";
+        int nbPorte;
         string Couleur = "";
 
         public string Description()

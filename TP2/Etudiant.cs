@@ -6,16 +6,28 @@ using System.Threading.Tasks;
 
 namespace TP2
 {
-    internal class Etudiant
+    public class Etudiant
     {
         string Nom = "";
         string prenom = "";
         int age;
 
+        public Etudiant(string nom, string prenom, int age)
+        {
+            Nom = nom;
+            this.prenom = prenom;
+            this.age = age;
+        }
+
         public string Saluer()
         {
            return $"Bonjour, je m'appelle {Nom} {prenom} et j'ai {age}";
 
+        }
+
+        public void Retourner()
+        {
+            Console.WriteLine($"{prenom} {Nom}");
         }
     }
 }
