@@ -22,7 +22,10 @@ namespace ConsoleApp1
             Console.WriteLine("7/ programme qui demande à l'utilisateur d'entrer 10 nombres");
             Console.WriteLine("Enum \n");
             Console.WriteLine("8/ exo semaine");
-            Console.WriteLine("9/ exo semaine");
+            Console.WriteLine("9/ exo age");
+            Console.WriteLine("Programme \n");
+            Console.WriteLine("10/ exo age annee");
+            Console.WriteLine("11/ exo table de multiplication ");
             var choix = Convert.ToInt32(Console.ReadLine());
 
             switch (choix)
@@ -53,6 +56,9 @@ namespace ConsoleApp1
                     break;
                 case 9:
                     Exo9();
+                    break;
+                case 10:
+                    Exo10();
                     break;
             }
         }
@@ -232,7 +238,8 @@ namespace ConsoleApp1
                     Console.WriteLine("Dimanche");
                     break;
             }
-            
+            Case();
+
         }
         public void Exo9()
         {
@@ -242,6 +249,19 @@ namespace ConsoleApp1
 
             int Jourvecu = nombreentree1 * Jour;
             Console.WriteLine($"Vous avez {Jourvecu}Jours");
+            Case();
         }
+
+        public void Exo10()
+        {
+            Console.WriteLine("Entrer votre Nom");
+            var Nom = Console.ReadLine();
+            Console.WriteLine("Entrer votre age");
+            int age = Convert.ToInt32(Console.ReadLine());
+            int max = 100;
+            int AnneeRestante = max - age;
+            Console.WriteLine($"{Nom} il vous reste {AnneeRestante} années à vivre");
+        }
+
     }
 }
