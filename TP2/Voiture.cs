@@ -8,14 +8,14 @@ namespace TP2
 {
     public class Voiture
     {
-        string marque = "Renault";
-        string modèle = "Clio 3";
-        int nbPorte = 5;
-        string Couleur = "jaune";
+        string marque = "";
+        string modèle = "";
+        int nbPorte = "";
+        string Couleur = "";
 
-        public void Description()
+        public string Description()
         {
-            Console.WriteLine($"La voiture est une {marque} {modele} avec {nbPorte} portes de couleur {Couleur}");
+            return $"La voiture est une {marque} {modele} avec {nbPorte} portes de couleur {Couleur}";
         }
     }
 }

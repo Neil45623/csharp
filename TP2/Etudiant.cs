@@ -8,13 +8,13 @@ namespace TP2
 {
     internal class Etudiant
     {
-        string Nom = "ROCHE";
-        string prenom = "Neil";
-        int age = 20;
+        string Nom = "";
+        string prenom = "";
+        int age;
 
-        public void Saluer()
+        public string Saluer()
         {
-            Console.WriteLine($"Bonjour, je m'appelle {Nom} {prenom} et j'ai {age}");
+           return $"Bonjour, je m'appelle {Nom} {prenom} et j'ai {age}";
 
         }
     }

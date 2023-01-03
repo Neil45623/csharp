@@ -9,16 +9,16 @@ namespace TP2
     internal class CompteBancaire
     {
         string nomTitulaire = "";
-        float sold = "";
+        float sold;
 
-        public void Deposer()
+        public void Deposer(float sommeDepose)
         {
-
+            return sold += sommeDepose;
         }
 
-        public void Retirer()
+        public void Retirer(float sommeRetirer)
         {
-
+            return sold -= sommeRetirer;
         }
 
     }
