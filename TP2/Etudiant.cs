@@ -8,26 +8,30 @@ namespace TP2
 {
     public class Etudiant
     {
-        public string Nom = "";
-        public string prenom = "";
-        public int age;
+        public string nom { get; set; }
+        public string prenom { get; set; }
+        public int age { get; set; }
 
         public Etudiant(string nom, string prenom, int age)
         {
-            Nom = nom;
+            nom = nom;
             this.prenom = prenom;
             this.age = age;
+        }
+        public bool EstMajeur()
+        {
+            return age >= 18;
+        }
+
+        public string NomComplet()
+        {
+            return prenom + " " + nom;
         }
 
         public string Saluer()
         {
            return $"Bonjour, je m'appelle {Nom} {prenom} et j'ai {age}";
 
-        }
-
-        public void Retourner()
-        {
-            Console.WriteLine($"{prenom} {Nom}");
         }
     }
 }
