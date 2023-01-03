@@ -8,9 +8,9 @@ namespace TP2
 {
     public class Etudiant
     {
-        string Nom = "";
-        string prenom = "";
-        int age;
+        public string Nom = "";
+        public string prenom = "";
+        public int age;
 
         public Etudiant(string nom, string prenom, int age)
         {

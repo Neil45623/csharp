@@ -4,15 +4,9 @@ using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
 
-namespace Formation
+namespace Formation : Etudiant
 {
-    class Etudiant
-    {
-        public string Nom { get; set; }
-        public int Age { get; set; }
-    }
-
-    class Formation
+     class Formation
     {
         public List<Etudiant> Etudiants { get; set; }
 
