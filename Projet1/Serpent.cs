@@ -89,7 +89,7 @@ namespace Projet1
             
             serpentPosition.Add(new Position(x, y));
             serpentPosition.RemoveAt(0);
-            Thread.Sleep(100);
+            Thread.Sleep(0);
 
         }
 
@@ -124,7 +124,7 @@ namespace Projet1
         {
             Position serpent = serpentPosition[serpentPosition.Count - 1];
 
-            if (serpent.x >= canvas.Widht || serpent.x <= 0 || serpent.y >= canvas.Height || serpent.y <=0)
+            if (serpent.x >= canvas.Width || serpent.x <= 0 || serpent.y >= canvas.Height || serpent.y <=0)
             {
                 throw new SerpentException("Tu as perdu");
             }

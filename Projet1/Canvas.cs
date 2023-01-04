@@ -8,13 +8,13 @@ namespace Projet1
 {
     public class Canvas
     {
-        public int Widht { get; set; }
+        public int Width { get; set; }
           
         public int Height { get; set; }  
         
         public Canvas()
         {
-            Widht = 100;
+            Width = 100;
             Height = 35;
 
             Console.CursorVisible = false;
@@ -24,12 +24,12 @@ namespace Projet1
         {
             Console.Clear();
 
-            for(int i = 0; i < Widht; i++)
+            for(int i = 0; i < Width; i++)
             {
                 Console.SetCursorPosition(i, 0);
                 Console.Write("-");
             }
-            for (int i = 0; i < Widht; i++)
+            for (int i = 0; i < Width; i++)
             {
                 Console.SetCursorPosition(i, Height);
                 Console.Write("-");
@@ -41,7 +41,7 @@ namespace Projet1
             }
             for (int i = 0; i < Height; i++)
             {
-                Console.SetCursorPosition(Widht, i);
+                Console.SetCursorPosition(Width, i);
                 Console.Write("-");
             }
         }

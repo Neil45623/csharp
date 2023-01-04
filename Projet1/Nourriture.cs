@@ -15,7 +15,7 @@ namespace Projet1
 
         public Nourriture()
         {
-            nourriturePos.x = rdm.Next(5, canvas.Widht);
+            nourriturePos.x = rdm.Next(5, canvas.Width);
             nourriturePos.y = rdm.Next(5, canvas.Height);
         }
 
@@ -32,7 +32,7 @@ namespace Projet1
 
         public void nourritureNexPos()
         {
-            nourriturePos.x = rdm.Next(5, canvas.Widht);
+            nourriturePos.x = rdm.Next(5, canvas.Width);
             nourriturePos.y = rdm.Next(5, canvas.Height);
         }
 
