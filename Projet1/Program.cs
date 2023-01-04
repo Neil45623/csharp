@@ -8,14 +8,17 @@ namespace Projet1
         {
             bool finished = false;
             Canvas canvas = new Canvas();
-            Serpent serpent = new Serpent();    
+            Serpent serpent = new Serpent();
+
+            Console.WriteLine(" \t\t\t\t PRESS ENTER");
+            Console.Read();
 
             while (!finished)
             {
                 canvas.drawCanvas();
+                serpent.Input();
                 serpent.drawSerpent();
                 serpent.mouvementSerpent();
-                //Console.Read();
             }
 
         }

@@ -59,7 +59,7 @@ namespace Projet1
             {
                 dir = 'r';
             }
-            else if (key == 'a' && dir != 'r')
+            else if (key == 'q' && dir != 'r')
             {
                 dir = 'l';
             }
@@ -85,7 +85,9 @@ namespace Projet1
             }
             
             serpentPosition.Add(new Position(x, y));
-            serpentPosition.RemoveAt(0);
+           // serpentPosition.RemoveAt(0);
+            Thread.Sleep(100);
+
         }
     }
 }
