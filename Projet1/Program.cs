@@ -13,7 +13,7 @@ namespace Projet1
             while (!finished)
             {
                 canvas.drawCanvas();
-                serpent.drawSerpent();  
+                serpent.drawSerpent(); 
                 Console.Read();
             }
 
