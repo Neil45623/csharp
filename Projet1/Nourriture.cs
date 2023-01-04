@@ -22,7 +22,18 @@ namespace Projet1
         public void drawNourriture()
         {
             Console.SetCursorPosition(nourriturePos.x, nourriturePos.y);
-            Console.Write("");
+            Console.Write("F");
+        }
+
+        public Position nourritureLocation()
+        {
+            return nourriturePos;
+        }
+
+        public void nourritureNexPos()
+        {
+            nourriturePos.x = rdm.Next(5, canvas.Widht);
+            nourriturePos.y = rdm.Next(5, canvas.Height);
         }
 
     }
