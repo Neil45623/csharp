@@ -13,8 +13,9 @@ namespace Projet1
             while (!finished)
             {
                 canvas.drawCanvas();
-                serpent.drawSerpent(); 
-                Console.Read();
+                serpent.drawSerpent();
+                serpent.mouvementSerpent();
+                //Console.Read();
             }
 
         }

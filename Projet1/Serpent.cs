@@ -32,7 +32,7 @@ namespace Projet1
             foreach(Position pos in serpentPosition)
             {
                 Console.SetCursorPosition(pos.x, pos.y);
-                Console.Write("▇");
+                Console.Write("▐");
             }
 
 
@@ -42,6 +42,7 @@ namespace Projet1
         {
             if (Console.KeyAvailable)
             {
+                keyInfo = Console.ReadKey(true);
                 key = keyInfo.KeyChar;
             }
         }
@@ -60,12 +61,13 @@ namespace Projet1
             }
             else if (key == 'a' && dir != 'r')
             {
-                dir = 'r';
+                dir = 'l';
             }
         }
 
         public void mouvementSerpent()
         {
+            direction();
             if(dir == 'u')
             {
                 y--;
@@ -81,6 +83,9 @@ namespace Projet1
             {
                 x--;
             }
+            
+            serpentPosition.Add(new Position(x, y));
+            serpentPosition.RemoveAt(0);
         }
     }
 }
