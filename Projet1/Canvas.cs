@@ -9,8 +9,8 @@ namespace Projet1
     public class Canvas
     {
         public int Widht { get; set; }
-
-        public int Height { get; set; }
+          
+        public int Height { get; set; }  
         
         public Canvas()
         {
