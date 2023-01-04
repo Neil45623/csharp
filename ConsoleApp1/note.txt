@@ -17,3 +17,10 @@ Avec le symbole @ on peut utiliser des mot clés en tant qu'identifiant
 Espace de noms : fichier dans lequel on déclare un namespace dans lequel on stock des classes
 
 Enum valeur stocké comme dans un tableau 0 1 2 3 4 5 etc
+----------------------------------------------------------------------------------------------------
+4/1
+
+Les membres qui sont accessible depuis la classe derivee sont ceux qui ont un acces public protected ou internal
+
+SI vous declarez un membre de la classe de base avec le mot 'virutal' vous autorisez le membre a être surcharge 
+au sein de la classe derivee Cela s'applique auc methodes et au propriété

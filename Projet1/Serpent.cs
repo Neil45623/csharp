@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace Projet1
 {
     public class Serpent
     {
-        List<Position> serpentPosition;
+        public List<Position> serpentPosition { get; set; }
 
         ConsoleKeyInfo keyInfo = new ConsoleKeyInfo();
         char key = 'z';
@@ -16,12 +17,14 @@ namespace Projet1
 
         public int x { get; set; }
         public int y { get; set; }
+        public int score { get; set; }
 
 
         public Serpent()
         {
             x = 20;
             y = 20;
+            score = 0;
 
             serpentPosition = new List<Position>();
             serpentPosition.Add(new Position(x, y));    
@@ -98,6 +101,7 @@ namespace Projet1
             {
                 serpentPosition.Add(new Position(x, y));
                 F.nourritureNexPos();
+                score++;
             }
         }
 
@@ -116,10 +120,11 @@ namespace Projet1
             }
         }
 
-        public mur(Canvas canvas)
+        public void mur(Canvas canvas)
         {
             Position serpent = serpentPosition[serpentPosition.Count - 1];
-            if (serpent.x >= canvas.Widht || serpent.x <= 0; serpent.y >= canvas.Height || serpent.y <=0)
+
+            if (serpent.x >= canvas.Widht || serpent.x <= 0 || serpent.y >= canvas.Height || serpent.y <=0)
             {
                 throw new SerpentException("Tu as perdu");
             }

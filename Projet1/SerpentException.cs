@@ -8,7 +8,7 @@ namespace Projet1
 {
     public class SerpentException : ApplicationException
     {
-        public SerpentException(string message) : base(message);
+        public SerpentException(string message) : base(message)
         {
 
         }
