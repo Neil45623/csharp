@@ -1,3 +1,5 @@
+2/1
+
 CLR = environnement d'exécution des apps
 
 Bibliothèque de classe sont divisé en espace de nom (unité logique qui regroupe le code de manière cohérente)
@@ -24,3 +26,13 @@ Les membres qui sont accessible depuis la classe derivee sont ceux qui ont un ac
 
 SI vous declarez un membre de la classe de base avec le mot 'virutal' vous autorisez le membre a être surcharge 
 au sein de la classe derivee Cela s'applique auc methodes et au propriété
+
+I majuscule pour les interfaces
+
+plusieurs methodes avec parametres qui change en = surcharge
+
+Les membres d'une interface ne doivent pas déclarer de niveau d'accès. Ils sont public par défaut
+
+on peut heriter d'une seul classe mais implementer plusieurs interface en les séparant par des ","
+
+ça sert a eviter la repetition de code
