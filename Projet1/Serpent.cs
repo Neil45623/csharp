@@ -89,6 +89,7 @@ namespace Projet1
             
             serpentPosition.Add(new Position(x, y));
             serpentPosition.RemoveAt(0);
+            //Task.Delay(100).Wait();
             Thread.Sleep(100);
 
         }
